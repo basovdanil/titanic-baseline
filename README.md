@@ -26,12 +26,12 @@ data/train.csv ──▶ 17 признаков ──▶ CV, 5 фолдов ─�
 Нужен Python 3.9+ и `pandas` + `scikit-learn` (проверено на 3.11, pandas 2.2.3, scikit-learn 1.9.1).
 
 ```bash
-py -3 titanic.py fetch                        # скачать публичную копию train.csv в data/
-py -3 titanic.py train                        # CV трёх моделей, work/metrics.json + work/model.pkl
-py -3 titanic.py predict --holdout 0.2        # проверка на отложенной выборке
-py -3 titanic.py predict --test data/test.csv --out work/submission.csv
-py -3 titanic.py check --min-accuracy 0.78    # проверить артефакты и формат submission
-py -3 titanic.py submit --dry-run             # показать команду отправки
+python titanic.py fetch                        # скачать публичную копию train.csv в data/
+python titanic.py train                        # CV трёх моделей, work/metrics.json + work/model.pkl
+python titanic.py predict --holdout 0.2        # проверка на отложенной выборке
+python titanic.py predict --test data/test.csv --out work/submission.csv
+python titanic.py check --min-accuracy 0.78    # проверить артефакты и формат submission
+python titanic.py submit --dry-run             # показать команду отправки
 ```
 
 `train`, `predict`, `check` принимают `--json`. Пути по умолчанию: `data/train.csv`, `work/model.pkl`,
@@ -86,7 +86,7 @@ embarked_C, embarked_Q, embarked_S, title_Mr, title_Mrs, title_Miss, title_Maste
 ## Проверка артефактов
 
 ```bash
-py -3 titanic.py check
+python titanic.py check
 CHECK features=OK
 CHECK no_target_leak=OK
 CHECK metrics=OK
@@ -102,7 +102,7 @@ best=forest accuracy=0.8316 rows=891 submission=...\work\submission.csv
 submission (колонки, непустота, целые `PassengerId` без дублей, метки в `{0,1}`); наличие файла модели.
 
 ```bash
-py -3 -m unittest discover -s tests -v
+python -m unittest discover -s tests -v
 ```
 
 28 тестов, около 23 секунд: признаки (порядок колонок, `sex`, `family`/`alone`, флаг пропущенного
