@@ -1,5 +1,10 @@
 # titanic-baseline
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/basovdanil/basovdanil/main/assets/tools.png"
+       alt="Eight tools with tests and exit codes" width="100%">
+</p>
+
 [![tests](https://github.com/basovdanil/titanic-baseline/actions/workflows/tests.yml/badge.svg)](https://github.com/basovdanil/titanic-baseline/actions/workflows/tests.yml)
 
 Cross-validation of three models on the Titanic data with 17 engineered features, a holdout check
