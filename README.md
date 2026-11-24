@@ -1,5 +1,7 @@
 # titanic-baseline — воспроизводимый пайплайн с кросс-валидацией
 
+[![tests](https://github.com/basovdanil/titanic-baseline/actions/workflows/tests.yml/badge.svg)](https://github.com/basovdanil/titanic-baseline/actions/workflows/tests.yml)
+
 Предсказание выживания на Titanic как рабочий каркас: извлечение признаков, кросс-валидация трёх
 моделей, обучение, генерация `submission.csv` и проверка артефактов перед отправкой.
 Данные реальные и публичные, все цифры воспроизводятся одной командой с фиксированным `SEED = 42`.
