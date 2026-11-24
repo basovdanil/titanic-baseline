@@ -41,3 +41,7 @@ python -m unittest discover -s tests
 ## Scope
 
 A textbook dataset, used as a discipline exercise: fixed seeds, explicit holdout, verified artifacts.
+
+---
+
+More projects: [github.com/basovdanil](https://github.com/basovdanil) · write-ups: [portfolio](https://basovdanil.github.io/portfolio/)
